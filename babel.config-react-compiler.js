@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * HACK: @poteto React Compiler inlines Zod in its build artifact. Zod spreads values passed to .map
+ * HACK : @poteto React Compiler inlines Zod in its build artifact. Zod spreads values passed to .map
  * which causes issues in @babel/plugin-transform-spread in loose mode, as it will result in
  * {undefined: undefined} which fails to parse.
  *
